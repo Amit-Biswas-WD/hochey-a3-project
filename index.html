@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- font awesome link -->
     <script src="https://kit.fontawesome.com/3d68e498d6.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Hockey</title>
     <!-- Tailwind custom color -->
     <script>
         tailwind.config = {
@@ -49,11 +49,11 @@
                       <li><a>Contact</a></li>
                     </ul>
                   </div>
-                  <a class="text-4xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
+                  <a class="lg:text-4xl font-extrabold text-2xl">Hockey<span class="text-[#FF4240]">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-2">
-                    <li><a class="text-[#FF4240]">Home</a></li>
+                    <li><a class="text-[#FF4240] font-bold">Home</a></li>
                     <li><a>About</a></li>
                     <li><a>Pages</a></li>
                     <li><a>Blog</a></li>
@@ -61,20 +61,117 @@
                   </ul>
                 </div>
                 <div class="navbar-end">
-                    <img class="px-4" src="./Images/frame.svg" alt="">
-                  <a class="btn bg-[#FF4240] text-white rounded"> Button</a>
+                    <img class="px-4 hidden lg:block" src="./Images/frame.svg" alt="">
+                  <a class="btn bg-[#FF4240] text-white rounded text-[10px] lg:text-sm w-[90px] h-[25px] lg:w-[148px] lg:h-[57px]">Get Ticket</a>
                 </div>
             </div>
         </nav>
         <!-- This is banner section  -->
-        <section class="banner">
-
+        <section class="">
+          <div class="carousel w-full mt-6 lg:mt-14">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./Images/2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./Images/3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full absolute">
+              <img src="./Images/4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
         </section>
+        <div class="lg:w-[566px] lg:h-[165px] w-auto h-auto bg-black text-white rounded-xl p-8 relative lg:bottom-[350px] lg:-right-[870px] mt-4">
+          <h2 class="font-extrabold text-sm lg:text-2xl mb-2 lg:mb4">Meet all the heroes from the field</h2>
+          <p class="font-medium text-xs lg:text-sm">Meeting a new individual presents an interesting opportunity for me. Being an open-minded person, I accept as true with that all individuals have different ideas to share. </p>
+        </div>
     </header>
     <!-- This is main section -->
     <main class="container mx-auto">
-
+      <section class="text-center border-dashed border-t-2 border-black-500  pt-8">
+        <h2 class="text-4xl font-extrabold font-[#131318]">Professional Hockeys Club</h2>
+        <p class="font-medium text-sm	lg:text-base text-[#0D0D1299] max-w-[607px] mx-auto mt-6 border-dashed border-b-2 border-black-500  pb-8">The National Hockey League was established in 1917 as the successor to the National Hockey Association (NHA).</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-20">
+          <div class="card card-compact w-80 lg:w-96">
+            <figure><div class="radial-progress text-[#ff4042]" style="--value:87;" role="progressbar">87%</div></figure>
+            <div class="card-body text-center items-center">
+              <h2 class="card-title">Prayer Facility</h2>
+              <p class="w-[250px]">Amet consectetur. Condimentum dignissim adipiscing.</p>
+            </div>
+          </div>
+          <div class="card card-compact w-80 lg:w-96">
+            <figure><div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div></figure>
+            <div class="card-body text-center items-center">
+              <h2 class="card-title">Experienced Coach</h2>
+              <p class="w-[250px]">Amet consectetur. Condimentum dignissim adipiscing.</p>
+            </div>
+          </div>
+          <div class="card card-compact w-80 lg:w-96">
+            <figure><div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">90%</div></figure>
+            <div class="card-body text-center items-center">
+              <h2 class="card-title">Senior Player</h2>
+              <p class="w-[250px]">Amet consectetur. Condimentum dignissim adipiscing.</p>
+            </div>
+          </div>
+          <div class="card card-compact w-80 lg:w-96">
+            <figure><div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div></figure>
+            <div class="card-body text-center items-center">
+              <h2 class="card-title">Training Ground</h2>
+              <p class="w-[250px]">Amet consectetur. Condimentum dignissim adipiscing.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    
+    <!-- This is footer section -->
+    <!-- <footer class="footer p-20 bg-black text-white text-base-content ml-[135px]">
+      <aside>
+        <h1 class="footer-title">Get In Touch</h1>
+        <p class="w-[345px]">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+        <p class="flex gap-1 items-center"><img src="./Images/frame.png" alt="">hockeys@support.com</p>
+        <p class="flex gap-1 items-center"><img src="./Images/frame1.png" alt="">(+62) 123-321-543</p>
+      </aside> 
+      <nav>
+        <h2 class="footer-title">Company</h2> 
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Leadership</a>
+        <a class="link link-hover">Careers</a>
+        <a class="link link-hover">News & Article</a>
+        <a class="link link-hover">Legal Notice</a>
+      </nav> 
+      <nav>
+        <h2 class="footer-title">Support</h2> 
+        <a class="link link-hover">Help Center</a>
+        <a class="link link-hover">FAQ</a>
+        <a class="link link-hover">Ticket Support</a>
+        <a class="link link-hover">Contact Us</a>
+      </nav> 
+      <nav>
+        <h2 class="footer-title">Services</h2> 
+        <a class="link link-hover">Academy</a>
+        <a class="link link-hover">Group Lesson</a>
+        <a class="link link-hover">Private Lesson</a>
+        <a class="link link-hover">Hockeys for kids</a>
+        <a class="link link-hover">Hockeys for Adult</a>
+      </nav>
+    </footer> -->
 </body>
 </html>
